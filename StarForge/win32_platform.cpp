@@ -11,7 +11,7 @@
 /*
 This Game Engine Was Started in the Year of Our Lord 2025
 
-Created By Thomas Baca 12/29/2025
+Created By Thomas Baca, Charles Humble, DudeonTheRun 12/29/2025
 
 This Engine is just a revisit to what I did in college and to keep skillset built up over the last 2 decades sharp
 and AI code free. This is a Library of Knowledge Learned the old fashion way. Read, Research, Develop, Iterate
@@ -36,8 +36,15 @@ LRESULT windowCallback(HWND hwnd, UINT unit, WPARAM wparam, LPARAM lparam)
 	switch (unit)
 	{
 	case WM_CLOSE:
+
+	
 	case WM_DESTROY: {
 		running = false;
+
+		//Thomas Baca 12.30.2025
+		//PostQuitMessage ensures the application closes and isn't running in the background
+		//We should also think about resource cleanup here as well to make sure we release all memory
+		//From the system before we close out. 
 		PostQuitMessage(0);
 	}break;
 
@@ -81,13 +88,31 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int  
 	{
 		//Game Input
 		MSG message;
-		while (PeekMessage(&message, window, 0, 0, PM_REMOVE)) {
-			TranslateMessage(&message);
-			DispatchMessage(&message);
-		}
-		//Simulate Game
+		
 
-		//Render Game
+		// Check to see if any messages are waiting in the queue
+		if (PeekMessage(&message, window, 0, 0, PM_REMOVE))
+		{
+			// translate keystroke messages into the right format
+			TranslateMessage(&message);
+
+			// send the message to the WindowProc function
+			DispatchMessage(&message);
+
+			// check to see if it's time to quit
+			if (message.message == WM_QUIT)
+				break;
+		}
+		else
+		{
+			// Run game code here
+			// ...
+			// ...
+
+			//Simulate Game
+
+			//Render Game
+		}
 	}
 }
 
