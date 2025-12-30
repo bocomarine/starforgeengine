@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|E:\\starforgeengine\\starforgeengine\\StarForge\\win32_platform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|solutionrelative:win32_platform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|E:\\starforgeengine\\starforgeengine\\StarForge\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|solutionrelative:pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|E:\\starforgeengine\\starforgeengine\\StarForge\\PCH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|solutionrelative:PCH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "E:\\starforgeengine\\starforgeengine\\StarForge\\pch.cpp",
+              "RelativeDocumentMoniker": "pch.cpp",
+              "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\pch.cpp",
+              "RelativeToolTip": "pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-30T04:06:03.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pch.h",
+              "DocumentMoniker": "E:\\starforgeengine\\starforgeengine\\StarForge\\pch.h",
+              "RelativeDocumentMoniker": "pch.h",
+              "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\pch.h",
+              "RelativeToolTip": "pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-30T04:05:23.339Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -28,7 +62,7 @@
               "RelativeDocumentMoniker": "win32_platform.cpp",
               "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\win32_platform.cpp",
               "RelativeToolTip": "win32_platform.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAiwFkAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-30T02:46:26.748Z",
               "EditorCaption": ""

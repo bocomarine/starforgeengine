@@ -1,6 +1,12 @@
-#include <CoreWindow.h>
+#include "pch.h"
 
+//Variables
+bool running = true;
 
+WNDPROC Wndproc;
+
+//Constants
+const wchar_t CLASS_NAME[] = L"Star Forge";
 /*
 This Game Engine Was Started in the Year of Our Lord 2025
 
@@ -22,14 +28,6 @@ BUILD BUILD BUILD BUILD this is Forever Project!
 
 */
 
-
-
-
-//Variables
-bool running= true;
-
-WNDPROC Wndproc;
-
 LRESULT windowCallback(HWND hwnd, UINT unit, WPARAM wparam, LPARAM lparam)
 {
 	LRESULT result = 0;
@@ -39,6 +37,7 @@ LRESULT windowCallback(HWND hwnd, UINT unit, WPARAM wparam, LPARAM lparam)
 	case WM_CLOSE:
 	case WM_DESTROY: {
 		running = false;
+		PostQuitMessage(0);
 	}break;
 
 	default:
@@ -48,11 +47,6 @@ LRESULT windowCallback(HWND hwnd, UINT unit, WPARAM wparam, LPARAM lparam)
 	}
 	return result;
 }
-
-
-//Constants
-const wchar_t CLASS_NAME[] = L"Star Forge";
-
 
 /// <summary>
 /// Main Window To The Application

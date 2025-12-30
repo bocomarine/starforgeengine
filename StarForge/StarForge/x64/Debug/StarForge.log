@@ -1,2 +1,3 @@
-﻿  win32_platform.cpp
+﻿  pch.cpp
+  win32_platform.cpp
   StarForge.vcxproj -> E:\starforgeengine\starforgeengine\StarForge\x64\Debug\StarForge.exe
