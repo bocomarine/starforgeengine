@@ -1,12 +1,13 @@
 #include "pch.h"
 
-//Variables
-bool running = true;
+#pragma region Global Variables
+	#define MAX_NAME_STRING 256
+	bool running = true;
+	WCHAR WindowTitle[MAX_NAME_STRING];
+	WCHAR WindowClass[MAX_NAME_STRING];
+	WNDPROC Wndproc;
+#pragma endregion
 
-WNDPROC Wndproc;
-
-//Constants
-const wchar_t CLASS_NAME[] = L"Star Forge";
 /*
 This Game Engine Was Started in the Year of Our Lord 2025
 
@@ -17,11 +18,11 @@ and AI code free. This is a Library of Knowledge Learned the old fashion way. Re
 
 This Engine will focus on Space Themed Something... We will figure that out as we go.
 
-Code should be Clean, Bug Free as much as humanly possible, no ai generated code no matter how tempting. 
+Code should be Clean, Bug Free as much as humanly possible, no ai generated code no matter how tempting.
 
 We Seek the Stars!!!!!!!!!
 
-Challege yourself and Deny yourself the easy path! 
+Challege yourself and Deny yourself the easy path!
 
 Document what must be documented to provide clear structure and Organization
 BUILD BUILD BUILD BUILD this is Forever Project!
@@ -61,16 +62,20 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int  
 {
 	//Windows Class
 	WNDCLASS window_class = {};
-	
+	LoadString(HINSTANCE(), IDS_PERGAMENAME, WindowTitle, MAX_NAME_STRING);
+	LoadString(HINSTANCE(), IDS_WINDOWCLASS, WindowClass, MAX_NAME_STRING);
 	window_class.style = CS_HREDRAW | CS_VREDRAW;
-	window_class.lpszClassName = CLASS_NAME;
+	window_class.lpszClassName = WindowClass;
 	window_class.lpfnWndProc = windowCallback;
+
+
+
 	//Register Class
 	RegisterClass(&window_class);
 
 
 	//Create Window
-	HWND window = CreateWindow(window_class.lpszClassName, CLASS_NAME, WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
+	HWND window = CreateWindow(window_class.lpszClassName, WindowTitle, WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
 
 	while (running)
 	{
@@ -81,7 +86,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int  
 			DispatchMessage(&message);
 		}
 		//Simulate Game
-		
+
 		//Render Game
 	}
 }
