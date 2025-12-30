@@ -40,6 +40,9 @@ LRESULT windowCallback(HWND hwnd, UINT unit, WPARAM wparam, LPARAM lparam)
 	
 	case WM_DESTROY: {
 		running = false;
+		
+		//Clean up D3D
+		CleanD3D();
 
 		//Thomas Baca 12.30.2025
 		//PostQuitMessage ensures the application closes and isn't running in the background
@@ -75,15 +78,16 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int  
 	window_class.lpszClassName = WindowClass;
 	window_class.lpfnWndProc = windowCallback;
 
-
-
+	
 	//Register Class
 	RegisterClass(&window_class);
 
 
 	//Create Window
 	HWND window = CreateWindow(window_class.lpszClassName, WindowTitle, WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
+	InitD3D(window);
 
+	//Main Game Loop
 	while (running)
 	{
 		//Game Input

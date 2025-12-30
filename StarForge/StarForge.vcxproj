@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="win32_platform.cpp" />
   </ItemGroup>
   <ItemGroup>
