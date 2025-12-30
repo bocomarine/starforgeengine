@@ -1,10 +1,17 @@
-#include "pch.h"
-#ifndef Renderer_FUNCTIONS_H
-#define Renderer_FUNCTIONS_H
+
+#include "Renderer.h"  
+
+// global declarations
+IDXGISwapChain* swapchain;             // the pointer to the swap chain interface
+ID3D11Device* dev;                     // the pointer to our Direct3D device interface
+ID3D11DeviceContext* devcon;           // the pointer to our Direct3D device context
+
+
+
+// this function initializes and prepares Direct3D for use
 // this function initializes and prepares Direct3D for use
 void InitD3D(HWND hWnd)
 {
-    // test
     // create a struct to hold information about the swap chain
     DXGI_SWAP_CHAIN_DESC scd;
 
@@ -38,8 +45,7 @@ void InitD3D(HWND hWnd)
 void CleanD3D()
 {
     // close and release all existing COM objects
-    swapchain->Release();
-    dev->Release();
-    devcon->Release();
+    if (swapchain) { swapchain->Release(); swapchain = nullptr; }
+    if (dev) { dev->Release(); dev = nullptr; }
+    if (devcon) { devcon->Release(); devcon = nullptr; }
 }
-#endif

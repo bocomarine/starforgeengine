@@ -42,7 +42,7 @@ LRESULT windowCallback(HWND hwnd, UINT unit, WPARAM wparam, LPARAM lparam)
 		running = false;
 		
 		//Clean up D3D
-		CleanD3D();
+	
 
 		//Thomas Baca 12.30.2025
 		//PostQuitMessage ensures the application closes and isn't running in the background
@@ -85,7 +85,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int  
 
 	//Create Window
 	HWND window = CreateWindow(window_class.lpszClassName, WindowTitle, WS_OVERLAPPEDWINDOW | WS_VISIBLE, CW_USEDEFAULT, CW_USEDEFAULT, 1280, 720, 0, 0, hInstance, 0);
-	InitD3D(window);
+	//InitD3D(window);
 
 	//Main Game Loop
 	while (running)
@@ -119,4 +119,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int  
 		}
 	}
 }
+
+
+
 
