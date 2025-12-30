@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -45,8 +45,7 @@
               "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\StarForge.rc - String Table",
               "RelativeToolTip": "StarForge.rc - String Table",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-30T04:44:49.429Z",
-              "EditorCaption": " - String Table"
+              "WhenOpened": "2025-12-30T04:44:49.429Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "resource.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-30T04:29:38.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T04:29:38.059Z"
             },
             {
               "$type": "Document",
@@ -70,12 +68,7 @@
               "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\icon1.ico - Icon [256x256, 32 bit, PNG]",
               "RelativeToolTip": "icon1.ico - Icon [256x256, 32 bit, PNG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-12-30T04:16:21.37Z",
-              "EditorCaption": " - Icon [256x256, 32 bit, PNG]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-12-30T04:16:21.37Z"
             },
             {
               "$type": "Document",
@@ -87,8 +80,7 @@
               "RelativeToolTip": "pch.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-30T04:06:03.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T04:06:03.418Z"
             },
             {
               "$type": "Document",
@@ -100,8 +92,7 @@
               "RelativeToolTip": "pch.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-30T04:05:23.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T04:05:23.339Z"
             },
             {
               "$type": "Document",
@@ -111,7 +102,7 @@
               "RelativeDocumentMoniker": "win32_platform.cpp",
               "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\win32_platform.cpp",
               "RelativeToolTip": "win32_platform.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwGsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-30T02:46:26.748Z",
               "EditorCaption": ""
