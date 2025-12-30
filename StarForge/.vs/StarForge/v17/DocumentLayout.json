@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\starforgeengine\\StarForge\\",
+  "WorkspaceRootPath": "E:\\starforgeengine\\starforgeengine\\StarForge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|E:\\starforgeengine\\StarForge\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|E:\\starforgeengine\\starforgeengine\\StarForge\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8C41B133-B725-44A8-A85B-0F0C7FD1F89A}|StarForge.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "E:\\starforgeengine\\StarForge\\Main.cpp",
+              "DocumentMoniker": "E:\\starforgeengine\\starforgeengine\\StarForge\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "E:\\starforgeengine\\StarForge\\Main.cpp",
+              "ToolTip": "E:\\starforgeengine\\starforgeengine\\StarForge\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-30T01:48:45.45Z",
               "EditorCaption": ""
