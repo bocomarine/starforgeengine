@@ -13,16 +13,43 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Public">
+      <UniqueIdentifier>{74e5bb0d-b520-4f02-aae8-26c679bde900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Private">
+      <UniqueIdentifier>{a824e82f-6d97-4615-92aa-3de31f1e9bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Private\Platform">
+      <UniqueIdentifier>{0c39c763-b436-4197-b553-8823f250accd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Private\Platform\Win32">
+      <UniqueIdentifier>{b51d88aa-f1bd-4cc9-8df3-cebc9ff918d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Private\Platform\Win32\Interfaces">
+      <UniqueIdentifier>{5814dbe6-09b1-4885-aa1b-fba107a09c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Public\Platform">
+      <UniqueIdentifier>{4a17b675-b037-41b9-96f8-133f18de467e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Public\Platform\Win32">
+      <UniqueIdentifier>{a4c398d6-8b28-47a1-bf99-f1b773092178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Public\Platform\Win32\Interfaces">
+      <UniqueIdentifier>{d3a8fb88-dda8-4b35-9e7b-8648b98f069f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="win32_platform.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Private\Platform\Win32</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="win32_platform.cpp">
+      <Filter>Source Files\Private\Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Source Files\Private\Platform\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="IApplication.cpp">
+      <Filter>Source Files\Private\Platform\Win32\Interfaces</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -32,8 +59,14 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="WinEntry.h">
+      <Filter>Source Files\Public\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="IApplication.h">
+      <Filter>Source Files\Public\Platform\Win32\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Source Files\Public\Platform\Win32</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

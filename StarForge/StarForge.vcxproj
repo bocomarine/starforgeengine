@@ -147,14 +147,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="IApplication.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="win32_platform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="application.h" />
+    <ClInclude Include="IApplication.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Renderer.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="WinEntry.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="StarForge.rc" />
