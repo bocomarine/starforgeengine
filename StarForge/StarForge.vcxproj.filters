@@ -5,68 +5,80 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Public">
-      <UniqueIdentifier>{74e5bb0d-b520-4f02-aae8-26c679bde900}</UniqueIdentifier>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{fe5c4d27-2334-4088-b50a-a4b8a73f1bbb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Private">
-      <UniqueIdentifier>{a824e82f-6d97-4615-92aa-3de31f1e9bdd}</UniqueIdentifier>
+    <Filter Include="Source Files\Common\Classes">
+      <UniqueIdentifier>{c0ec7661-b97c-4336-94cb-41d7e6dfe437}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Private\Platform">
-      <UniqueIdentifier>{0c39c763-b436-4197-b553-8823f250accd}</UniqueIdentifier>
+    <Filter Include="Source Files\Common\Private">
+      <UniqueIdentifier>{14e0664f-1541-465c-b2c8-5077be19b770}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Private\Platform\Win32">
+    <Filter Include="Source Files\Common\Public">
+      <UniqueIdentifier>{5cf219be-ce0f-4b27-a0f1-3a9721463e0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform">
+      <UniqueIdentifier>{18dc7bca-28ec-4a75-811b-e59975cc8904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\Win32">
       <UniqueIdentifier>{b51d88aa-f1bd-4cc9-8df3-cebc9ff918d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Private\Platform\Win32\Interfaces">
+    <Filter Include="Source Files\Platform\Win32\Private">
+      <UniqueIdentifier>{a824e82f-6d97-4615-92aa-3de31f1e9bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Platform\Win32\Private\Interfaces">
       <UniqueIdentifier>{5814dbe6-09b1-4885-aa1b-fba107a09c5a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Public\Platform">
-      <UniqueIdentifier>{4a17b675-b037-41b9-96f8-133f18de467e}</UniqueIdentifier>
+    <Filter Include="Source Files\Platform\Win32\Public">
+      <UniqueIdentifier>{74e5bb0d-b520-4f02-aae8-26c679bde900}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Public\Platform\Win32">
-      <UniqueIdentifier>{a4c398d6-8b28-47a1-bf99-f1b773092178}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Public\Platform\Win32\Interfaces">
+    <Filter Include="Source Files\Platform\Win32\Public\Interfaces">
       <UniqueIdentifier>{d3a8fb88-dda8-4b35-9e7b-8648b98f069f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{f1eb8c8f-2258-40ff-8414-650188b5be5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{10282f38-a45a-481c-b243-e80c2a4718b0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files\Private\Platform\Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="win32_platform.cpp">
-      <Filter>Source Files\Private\Platform\Win32</Filter>
+    <ClCompile Include="IApplication.cpp">
+      <Filter>Source Files\Platform\Win32\Private\Interfaces</Filter>
     </ClCompile>
     <ClCompile Include="application.cpp">
-      <Filter>Source Files\Private\Platform\Win32</Filter>
+      <Filter>Source Files\Platform\Win32\Private</Filter>
     </ClCompile>
-    <ClCompile Include="IApplication.cpp">
-      <Filter>Source Files\Private\Platform\Win32\Interfaces</Filter>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files\Platform\Win32\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="win32_platform.cpp">
+      <Filter>Source Files\Platform\Win32\Private</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WinEntry.h">
-      <Filter>Source Files\Public\Platform\Win32</Filter>
+      <Filter>Source Files\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IApplication.h">
-      <Filter>Source Files\Public\Platform\Win32\Interfaces</Filter>
+      <Filter>Source Files\Platform\Win32\Public\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="application.h">
-      <Filter>Source Files\Public\Platform\Win32</Filter>
+      <Filter>Source Files\Platform\Win32\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="WinEntry.h">
+      <Filter>Source Files\Platform\Win32\Public</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
